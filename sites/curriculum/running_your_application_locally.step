@@ -9,7 +9,7 @@ steps do
   end
   step do
     text "Point your web browser to "
-    url "http://localhost:3000" 
+    url "http://localhost:3000"
     p "See your web app actually running!"
   end
 
@@ -20,6 +20,10 @@ steps do
 [2012-03-31 08:33:11] INFO  WEBrick::HTTPServer#start done.
 Exiting
     STOPPING_RAILS_SERVER
+  end
+
+  tip "Shutting down rails server on Windows" do
+    message "On Windows you may need to use CTRL+Break instead of CTRL+C to stop the rails server."
   end
 end
 
